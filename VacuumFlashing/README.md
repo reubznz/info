@@ -22,7 +22,7 @@ Build your firmware from the [Vacuum Firmware Builder](https://builder.dontvacuu
 
 ![dustbuilder](https://github.com/reubznz/info/assets/47412059/725408a1-4311-4f7a-a381-c4a10262ec1b)
 
-When you receive the email to say the firmware is ready, click through to the firmware location, and copy the URL of the firmware file for use later.
+When you receive the email to say the firmware is ready, click through to the firmware location, and copy the URL of the firmware file for use in Step 14 below
 
 ## Connecting, Rooting and Flashing the Vacuum
 
