@@ -40,9 +40,9 @@ When you receive the email to say the firmware is ready, click through to the fi
 
 4. Confirm that you see a console with MIOT information
 
-5. Press and hold the 's' key on your keyboard while performing the next few steps
+5. Take vacuum off charging dock and press and hold the POWER button for 3 seconds to turn the vacuum off
 
-6. Take vacuum off charging dock and press and hold the POWER button for 3 seconds to turn the vacuum off
+6. Press and hold the 's' key on your keyboard while performing the next few steps
 
 7. Press and hold the HOME button for at least 3 seconds and continue to hold
 
