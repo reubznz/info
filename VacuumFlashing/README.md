@@ -1,4 +1,4 @@
-# VACUUM FLASHING
+# Xiaomi 1C Vacuum Flashing
 
 ## Links and info
 
