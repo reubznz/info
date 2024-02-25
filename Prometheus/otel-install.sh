@@ -86,7 +86,7 @@ service:
   extensions: [zpages, memory_ballast]
   pipelines:
     metrics:
-      receivers: [windowsperfcounters/processor, windowsperfcounters/memory, hostmetrics]
+      receivers: [hostmetrics]
       processors: [resourcedetection/system, memory_limiter, batch]
       exporters: [prometheus]
 EOL
