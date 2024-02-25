@@ -1,14 +1,5 @@
 #!/bin/bash
 
-# Check if the required number of arguments are provided
-if [ "$#" -ne 2 ]; then
-    echo "Usage: $0 <URL> <Authorization_Key>"
-    exit 1
-fi
-
-URL=$1
-AUTH_KEY=$2
-
 # Ensure 'otel-agent' user and group exist
 if ! id -u otel-agent &>/dev/null; then
     useradd --system otel-agent
