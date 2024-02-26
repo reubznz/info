@@ -28,7 +28,7 @@ Replace email and password in msmtpd.env
 
 ## Deploy Containters
 
-```sudo docker-compose -d up```
+```sudo docker-compose up -d```
 
 ## Links
 
