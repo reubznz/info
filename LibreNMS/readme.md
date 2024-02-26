@@ -24,6 +24,7 @@ Replace password in .env
 nano .env
 
 Replace password in msmtpd.env
+
 nano msmtpd.env
 
 
