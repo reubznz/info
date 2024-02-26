@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-`apt install docker-compose`
+`sudo apt install docker-compose`
 
 ## LibreNMS
 
@@ -28,4 +28,4 @@ Replace email and password in msmtpd.env
 
 ## Deploy Containters
 
-```docker-compose -d up```
+```sudo docker-compose -d up```
