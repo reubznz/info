@@ -1,0 +1,44 @@
+version: '3.6'
+
+services:
+  db:
+    image: mariadb
+    restart: unless-stopped
+    networks:
+      - zoneminder
+    volumes:
+      - zoneminder-db_data:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=zm
+    env_file:
+      - ./.env
+
+  zoneminder:
+    image: ghcr.io/zoneminder-containers/zoneminder-base:1.36.31
+    restart: unless-stopped
+    stop_grace_period: 45s
+    depends_on:
+      - db
+    ports:
+      - 9700:80
+    networks:
+      - zoneminder
+    volumes:
+      - zoneminder-app_data:/data
+      - zoneminder-app_config:/config
+      - zoneminder-app_log:/log
+      - type: tmpfs
+        target: /dev/shm
+        tmpfs:
+          size: 512m
+    env_file:
+      - ./.env
+
+networks:
+  zoneminder:
+
+volumes:
+  zoneminder-db_data:
+  zoneminder-app_data:
+  zoneminder-app_config:
+  zoneminder-app_log:
